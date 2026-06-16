@@ -121,12 +121,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;padding:0 52px;d
 .register-btn:hover{background:var(--gold2);}
 
 /* SERVICES — WHAT I DO */
-.services-wrap{background:var(--off);padding:70px 60px;color:var(--text);}
+.services-wrap{background:var(--navy3,#0a1628);padding:70px 60px;}
 .services-inner{max-width:1160px;margin:0 auto;}
 .sec-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
 .sec-eyebrow .bar{width:40px;height:4px;background:var(--gold);}
 .sec-eyebrow span{font-size:10.5px;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-weight:700;}
-.sec-h2{font-family:"Playfair Display",serif;font-size:clamp(24px,3.2vw,36px);color:var(--navy);font-weight:700;line-height:1.15;margin-bottom:12px;}
+.sec-h2{font-family:"Playfair Display",serif;font-size:clamp(24px,3.2vw,36px);color:inherit;font-weight:700;line-height:1.15;margin-bottom:12px;}
 .sec-h2 em{color:var(--gold);font-style:italic;}
 .sec-desc{font-size:14px;color:var(--gray);line-height:1.8;max-width:680px;margin-bottom:36px;}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
@@ -137,7 +137,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;padding:0 52px;d
 .svc-title{font-family:"Playfair Display",serif;font-size:16px;color:var(--navy);font-weight:700;margin-bottom:8px;line-height:1.3;}
 .svc-body{font-size:12.5px;color:var(--gray);line-height:1.7;margin-bottom:14px;}
 .svc-items{list-style:none;}
-.svc-items li{font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;}
+.svc-items li{font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;}
 .svc-items li::before{content:"→";position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;}
 .svc-starting{font-size:12px;font-weight:700;color:var(--gold);margin-top:14px;display:block;}
 
@@ -205,7 +205,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;padding:0 52px;d
 .employer-btns{display:flex;flex-direction:column;gap:10px;flex-shrink:0;}
 
 /* COMMUNITY PROGRAMS */
-.programs-wrap{background:var(--off);padding:70px 60px;color:var(--text);}
+.programs-wrap{background:var(--navy3,#0a1628);padding:70px 60px;}
 .programs-inner{max-width:1160px;margin:0 auto;}
 .prog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px;}
 .prog-card{background:var(--white);border-radius:6px;padding:24px 22px;border-left:4px solid var(--gold);display:flex;gap:16px;align-items:flex-start;}
@@ -589,78 +589,78 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;padding:0 52px;d
 <section class="services-wrap" id="services">
   <div class="services-inner">
     <div class="sec-eyebrow"><div class="bar"></div><span>Services</span></div>
-    <h2 class="sec-h2">Services &amp; Engagements</h2>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:20px;letter-spacing:.04em;">Click any service to expand ↓</p>
-    <div style="border:1px solid rgba(10,22,40,.08);border-radius:6px;background:var(--white);padding:0 22px;">
-        <div class="acc-item light" id="svc-0">
+    <h2 class="sec-h2" style="color:var(--white);">Services &amp; Engagements</h2>
+    <p style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:20px;letter-spacing:.04em;">Click any service to expand ↓</p>
+    <div style="border:1px solid rgba(255,255,255,.08);border-radius:6px;background:rgba(255,255,255,.03);padding:0 22px;">
+        <div class="acc-item" id="svc-0">
           <button class="acc-trigger" onclick="toggleAcc('svc-0')" style="padding:16px 0;">
-            <span class="acc-title dark">🧠 &nbsp;Human Culture &amp; Workforce Strategy <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,000/mo</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">🧠 &nbsp;Human Culture &amp; Workforce Strategy <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,000/mo</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-0-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">I build culture within teams through creative, hands-on experiences — no screens, real human touchpoints. Alignment, retention, belonging, and team dynamics that actually hold.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Culture design &amp; team alignment</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Retention strategies that stick</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Workforce training — role-play &amp; scenario-based</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>People-first ecosystem building</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">I build culture within teams through creative, hands-on experiences — no screens, real human touchpoints. Alignment, retention, belonging, and team dynamics that actually hold.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Culture design &amp; team alignment</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Retention strategies that stick</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Workforce training — role-play &amp; scenario-based</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>People-first ecosystem building</li></ul>
             </div>
           </div>
         </div>
-        <div class="acc-item light" id="svc-1">
+        <div class="acc-item" id="svc-1">
           <button class="acc-trigger" onclick="toggleAcc('svc-1')" style="padding:16px 0;">
-            <span class="acc-title dark">🏛️ &nbsp;HR &amp; People Strategy Consulting <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,500/mo</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">🏛️ &nbsp;HR &amp; People Strategy Consulting <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,500/mo</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-1-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">Fractional HR leadership for organizations that need senior-level people strategy without a full-time hire. Built on 20+ years of real execution — not policy memos.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Fractional CHRO &amp; HR leadership</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>HR systems &amp; forms architecture</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Onboarding design &amp; development</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Compliance, culture, and performance</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">Fractional HR leadership for organizations that need senior-level people strategy without a full-time hire. Built on 20+ years of real execution — not policy memos.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Fractional CHRO &amp; HR leadership</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>HR systems &amp; forms architecture</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Onboarding design &amp; development</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Compliance, culture, and performance</li></ul>
             </div>
           </div>
         </div>
-        <div class="acc-item light" id="svc-2">
+        <div class="acc-item" id="svc-2">
           <button class="acc-trigger" onclick="toggleAcc('svc-2')" style="padding:16px 0;">
-            <span class="acc-title dark">🤖 &nbsp;AI Generalist &amp; Implementation <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,500</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">🤖 &nbsp;AI Generalist &amp; Implementation <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,500</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-2-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">I help organizations actually implement AI — not just talk about it. From HR to marketing to operations, sector-specific AI integration your team can actually use.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>AI tools by sector — HR, marketing, ops</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Prompt engineering &amp; workflow automation</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>AI policy &amp; team training</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Tech stack modernization roadmaps</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">I help organizations actually implement AI — not just talk about it. From HR to marketing to operations, sector-specific AI integration your team can actually use.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>AI tools by sector — HR, marketing, ops</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Prompt engineering &amp; workflow automation</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>AI policy &amp; team training</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Tech stack modernization roadmaps</li></ul>
             </div>
           </div>
         </div>
-        <div class="acc-item light" id="svc-3">
+        <div class="acc-item" id="svc-3">
           <button class="acc-trigger" onclick="toggleAcc('svc-3')" style="padding:16px 0;">
-            <span class="acc-title dark">🎤 &nbsp;Keynote Speaking &amp; MC <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,500</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">🎤 &nbsp;Keynote Speaking &amp; MC <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $2,500</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-3-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">I command rooms. I set tones. I move people. Available for conferences, galas, summits, and corporate events — keynotes on workforce, leadership, AI, culture, and community.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Keynote speaking — workforce &amp; culture topics</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Master of Ceremonies — galas &amp; conferences</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Workshop design &amp; facilitation</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Executive panels &amp; roundtables</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">I command rooms. I set tones. I move people. Available for conferences, galas, summits, and corporate events — keynotes on workforce, leadership, AI, culture, and community.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Keynote speaking — workforce &amp; culture topics</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Master of Ceremonies — galas &amp; conferences</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Workshop design &amp; facilitation</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Executive panels &amp; roundtables</li></ul>
             </div>
           </div>
         </div>
-        <div class="acc-item light" id="svc-4">
+        <div class="acc-item" id="svc-4">
           <button class="acc-trigger" onclick="toggleAcc('svc-4')" style="padding:16px 0;">
-            <span class="acc-title dark">📋 &nbsp;Workforce Development &amp; Ecosystem Strategy <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $5,000</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">📋 &nbsp;Workforce Development &amp; Ecosystem Strategy <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $5,000</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-4-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">20 years building talent pipelines, bridging employers to talent, and activating economic opportunity at a systems level — across education, industry, and government.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Talent pipeline design &amp; activation</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Employer-education partnerships</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Economic development strategy</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Cross-sector community alignment</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">20 years building talent pipelines, bridging employers to talent, and activating economic opportunity at a systems level — across education, industry, and government.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Talent pipeline design &amp; activation</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Employer-education partnerships</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Economic development strategy</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Cross-sector community alignment</li></ul>
             </div>
           </div>
         </div>
-        <div class="acc-item light" id="svc-5">
+        <div class="acc-item" id="svc-5">
           <button class="acc-trigger" onclick="toggleAcc('svc-5')" style="padding:16px 0;">
-            <span class="acc-title dark">🌐 &nbsp;Community &amp; Civic Engagement <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $3,000</span></span>
-            <span class="acc-icon" style="color:var(--navy);">+</span>
+            <span class="acc-title">🌐 &nbsp;Community &amp; Civic Engagement <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $3,000</span></span>
+            <span class="acc-icon">+</span>
           </button>
           <div class="acc-body" id="svc-5-body">
             <div class="acc-body-inner">
-              <p class="dark" style="margin-bottom:10px;">A trust network built over 20+ years at every level of the Lake Norman ecosystem — businesses, education, government, and community. The relationships that money cannot buy.</p>
-              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Cross-sector partnership facilitation</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Board &amp; civic advisory roles</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Community program design</li><li style="font-size:12px;color:var(--gray);padding:4px 0;border-bottom:1px solid rgba(10,22,40,.05);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Public-private partnership development</li></ul>
+              <p style="color:rgba(255,255,255,.65);margin-bottom:10px;">A trust network built over 20+ years at every level of the Lake Norman ecosystem — businesses, education, government, and community. The relationships that money cannot buy.</p>
+              <ul style="list-style:none;padding:0;"><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Cross-sector partnership facilitation</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Board &amp; civic advisory roles</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Community program design</li><li style="font-size:12px;color:rgba(255,255,255,.6);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);padding-left:14px;position:relative;"><span style="position:absolute;left:0;color:var(--gold);font-size:10px;top:5px;">→</span>Public-private partnership development</li></ul>
             </div>
           </div>
         </div>
@@ -858,78 +858,78 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;height:72px;padding:0 52px;d
 <section class="programs-wrap" id="programs">
   <div class="programs-inner">
     <div class="sec-eyebrow"><div class="bar"></div><span>Community Programs</span></div>
-    <h2 class="sec-h2">Community &amp; Fractional Programs</h2>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:20px;letter-spacing:.04em;">Click any program to expand ↓</p>
-    <div style="border:1px solid rgba(10,22,40,.08);border-radius:6px;background:var(--white);padding:0 22px;">
-      <div class="acc-item light" id="prog-0">
+    <h2 class="sec-h2" style="color:var(--white);">Community &amp; Fractional Programs</h2>
+    <p style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:20px;letter-spacing:.04em;">Click any program to expand ↓</p>
+    <div style="border:1px solid rgba(255,255,255,.08);border-radius:6px;background:rgba(255,255,255,.03);padding:0 22px;">
+      <div class="acc-item" id="prog-0">
         <button class="acc-trigger" onclick="toggleAcc('prog-0')" style="padding:16px 0;">
-          <span class="acc-title dark">📣 &nbsp;Fractional Small Business Marketing <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $500/mo</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">📣 &nbsp;Fractional Small Business Marketing <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $500/mo</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-0-body">
           <div class="acc-body-inner">
-            <p class="dark">Brand strategy, content creation, social media, community presence, and outreach — fractional marketing leadership for small businesses that want to grow without a full-time hire.</p>
+            <p style="color:rgba(255,255,255,.65);">Brand strategy, content creation, social media, community presence, and outreach — fractional marketing leadership for small businesses that want to grow without a full-time hire.</p>
           </div>
         </div>
       </div>
-      <div class="acc-item light" id="prog-1">
+      <div class="acc-item" id="prog-1">
         <button class="acc-trigger" onclick="toggleAcc('prog-1')" style="padding:16px 0;">
-          <span class="acc-title dark">🌐 &nbsp;Website Design &amp; Development <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,500</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">🌐 &nbsp;Website Design &amp; Development <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,500</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-1-body">
           <div class="acc-body-inner">
-            <p class="dark">Website builds, refreshes, and data-driven redesigns. From strategy to launch — built for visibility, conversion, and brand alignment that actually reflects who you are.</p>
+            <p style="color:rgba(255,255,255,.65);">Website builds, refreshes, and data-driven redesigns. From strategy to launch — built for visibility, conversion, and brand alignment that actually reflects who you are.</p>
           </div>
         </div>
       </div>
-      <div class="acc-item light" id="prog-2">
+      <div class="acc-item" id="prog-2">
         <button class="acc-trigger" onclick="toggleAcc('prog-2')" style="padding:16px 0;">
-          <span class="acc-title dark">🎨 &nbsp;Brand &amp; Content Packages <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,200</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">🎨 &nbsp;Brand &amp; Content Packages <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Starting at $1,200</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-2-body">
           <div class="acc-body-inner">
-            <p class="dark">Full brand development — identity, messaging, content strategy, and social presence. For organizations ready to show up consistently and powerfully in their market.</p>
+            <p style="color:rgba(255,255,255,.65);">Full brand development — identity, messaging, content strategy, and social presence. For organizations ready to show up consistently and powerfully in their market.</p>
           </div>
         </div>
       </div>
-      <div class="acc-item light" id="prog-3">
+      <div class="acc-item" id="prog-3">
         <button class="acc-trigger" onclick="toggleAcc('prog-3')" style="padding:16px 0;">
-          <span class="acc-title dark">🔗 &nbsp;LINK Networking Circles <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Community Events</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">🔗 &nbsp;LINK Networking Circles <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Community Events</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-3-body">
           <div class="acc-body-inner">
-            <p class="dark">Curated small-group networking connecting professionals, business owners, and community leaders. Built for real relationships and real opportunity — not business card swaps.</p>
+            <p style="color:rgba(255,255,255,.65);">Curated small-group networking connecting professionals, business owners, and community leaders. Built for real relationships and real opportunity — not business card swaps.</p>
           </div>
         </div>
       </div>
-      <div class="acc-item light" id="prog-4">
+      <div class="acc-item" id="prog-4">
         <button class="acc-trigger" onclick="toggleAcc('prog-4')" style="padding:16px 0;">
-          <span class="acc-title dark">🎤 &nbsp;Visionary Circle™ Luncheon Series <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Executive Series</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">🎤 &nbsp;Visionary Circle™ Luncheon Series <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Executive Series</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-4-body">
           <div class="acc-body-inner">
-            <p class="dark">Executive-level conversations on workforce, leadership, AI, and community impact. 30-seat curated rooms where real decisions get made. Series happening across the Lake Norman region.</p>
+            <p style="color:rgba(255,255,255,.65);">Executive-level conversations on workforce, leadership, AI, and community impact. 30-seat curated rooms where real decisions get made. Series happening across the Lake Norman region.</p>
           </div>
         </div>
       </div>
-      <div class="acc-item light" id="prog-5">
+      <div class="acc-item" id="prog-5">
         <button class="acc-trigger" onclick="toggleAcc('prog-5')" style="padding:16px 0;">
-          <span class="acc-title dark">🌐 &nbsp;LINK Community Hub™ Programs <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Visit linkcommunityhub.com</span></span>
-          <span class="acc-icon" style="color:var(--navy);">+</span>
+          <span class="acc-title">🌐 &nbsp;LINK Community Hub™ Programs <span style="font-size:11px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:700;margin-left:8px;">Visit linkcommunityhub.com</span></span>
+          <span class="acc-icon">+</span>
         </button>
         <div class="acc-body" id="prog-5-body">
           <div class="acc-body-inner">
-            <p class="dark">Employee culture and engagement programs through the LINK-owned Community Hub. Connecting organizations to community, building belonging, and supporting retention strategies. Visit linkcommunityhub.com.</p>
+            <p style="color:rgba(255,255,255,.65);">Employee culture and engagement programs through the LINK-owned Community Hub. Connecting organizations to community, building belonging, and supporting retention strategies. Visit linkcommunityhub.com.</p>
           </div>
         </div>
       </div>
     </div>
     <div style="text-align:center;margin-top:20px;">
-      <a href="mailto:jaime@linklakenorman.com?subject=Community Program Inquiry" style="display:inline-block;border:2px solid rgba(184,146,42,.38);color:var(--gold);padding:11px 26px;font-weight:600;font-size:13px;border-radius:3px;text-decoration:none;background:var(--white);">Start a Conversation →</a>
+      <a href="mailto:jaime@linklakenorman.com?subject=Community Program Inquiry" style="display:inline-block;border:2px solid rgba(184,146,42,.38);color:var(--gold);padding:11px 26px;font-weight:600;font-size:13px;border-radius:3px;text-decoration:none;">Start a Conversation →</a>
     </div>
   </div>
 </section>
